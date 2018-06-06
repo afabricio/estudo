@@ -15,7 +15,7 @@
 
 	<modules>
 		<module>webmodel-dominio</module>
-		<module>webmodel-jaxrs</module>
+		<module>webmodel-presentation</module>
 		<module>webmodel-ear</module>
 	</modules>
 

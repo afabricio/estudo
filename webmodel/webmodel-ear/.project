@@ -3,6 +3,7 @@
 	<name>webmodel-ear</name>
 	<comment></comment>
 	<projects>
+		<project>webmodel-presentation</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -2,7 +2,7 @@
     <wb-module deploy-name="webmodel-ear-4.0.31.6B-SNAPSHOT">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
-        <dependent-module archiveName="webmodel-jaxrs-4.0.31.6B-SNAPSHOT.war" deploy-path="/" handle="module:/resource/webmodel-jaxrs/webmodel-jaxrs">
+        <dependent-module archiveName="webmodel-presentation-4.0.31.6B-SNAPSHOT.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/webmodel/webmodel-presentation/4.0.31.6B-SNAPSHOT/webmodel-presentation-4.0.31.6B-SNAPSHOT.war">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="webmodel-login-4.0.31.6B-SNAPSHOT.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/webmodel/webmodel-login/4.0.31.6B-SNAPSHOT/webmodel-login-4.0.31.6B-SNAPSHOT.war">
