@@ -24,13 +24,6 @@
 
 		<dependency>
 			<groupId>br.com.webmodel</groupId>
-			<artifactId>webmodel-login</artifactId>
-			<version>${project.version}</version>
-			<type>war</type>
-		</dependency>
-
-		<dependency>
-			<groupId>br.com.webmodel</groupId>
 			<artifactId>webmodel-dominio</artifactId>
 			<version>${project.version}</version>
 			<type>ejb</type>
@@ -121,11 +114,6 @@
 							<groupId>br.com.webmodel</groupId>
 							<artifactId>webmodel-presentation</artifactId>
 							<contextRoot>/ki-rs</contextRoot>
-						</webModule>
-						<webModule>
-							<groupId>br.com.webmodel</groupId>
-							<artifactId>webmodel-login</artifactId>
-							<contextRoot>/webmodel-login</contextRoot>
 						</webModule>
 
 						<ejbModule>
