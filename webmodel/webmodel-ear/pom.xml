@@ -113,7 +113,7 @@
 						<webModule>
 							<groupId>br.com.webmodel</groupId>
 							<artifactId>webmodel-presentation</artifactId>
-							<contextRoot>/ki-rs</contextRoot>
+							<contextRoot>/webmodel</contextRoot>
 						</webModule>
 
 						<ejbModule>
