@@ -20,7 +20,7 @@ public class Customer {
     private String email;
     
     @OneToMany(mappedBy = "customerid")
-    private Set<Phone> phones = new HashSet<>();;
+    private Set<Phone> phones = new HashSet<Phone>();
 
 	public Long getId() {
 		return id;
