@@ -22,6 +22,8 @@ public class StoredQueryPaginator {
 		
 	public void setNamedQuery(String namedQuery) {
 		this.namedQuery = namedQuery;
+		this.index = 0;
+		this.next = true;
 	}
 
 	public void setPageSize(int pageSize) {

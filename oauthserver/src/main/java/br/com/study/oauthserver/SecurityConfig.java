@@ -26,7 +26,7 @@ import org.springframework.web.filter.CorsFilter;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Resource(name = "userService")
+    @Resource(name = "userDetailsService")
     private UserDetailsService userDetailsService;
 
     @Override
@@ -43,17 +43,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .csrf().disable()
-                .anonymous().disable()
-                .authorizeRequests()
-                .antMatchers("/oauth/**").permitAll();
+//        http
+//                .csrf().disable()
+//                .anonymous().disable()
+//                .authorizeRequests()
+//                .antMatchers("/oauth/token","/oauth/authorize").permitAll();
     }
 
-    @Bean
-    public TokenStore tokenStore() {
-        return new InMemoryTokenStore();
-    }
+
 
     @Bean
     public PasswordEncoder encoder(){
