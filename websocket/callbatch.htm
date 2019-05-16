@@ -1,0 +1,30 @@
+<script>
+
+var socket = new WebSocket("ws://localhost:7001/ki-rs/actions");
+socket.onmessage = onMessage;
+
+function send(){
+
+   var DeviceAction = {
+        batch: "fundos"
+    };
+    socket.send(JSON.stringify(DeviceAction));
+
+
+}
+
+
+function onMessage(event) {
+    var percentLog = event.data;
+	
+	 document.getElementById('outarea').value = percentLog;
+	
+	
+}
+
+</script>
+<html>
+	<input type="button" onclick="send();"/>
+	<textarea name="outarea" id="outarea" rows="20" cols="50"></textarea>
+
+</html>
